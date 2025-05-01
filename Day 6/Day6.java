@@ -1,9 +1,13 @@
-class Solution {
+class Day6 {
     // Comments are incorrect bits of logic
     public static int longestOnes(int[] nums, int k) {
-        int left, ans, sum, zeroes;
+        int left, ans, 
+        //sum, 
+        zeroes;
         //sum not necessary, was copied from code because that code needed to find an average, which is the sum/number.
-        left = ans = sum = zeroes = 0;
+        left = ans = 
+        //sum = 
+        zeroes = 0;
 
         for(int right = 0; right<nums.length; right++){
             //sum += nums[right];
