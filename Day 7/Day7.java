@@ -3,7 +3,7 @@
 import java.util.Arrays;
 
 
-public class Solution {
+public class Day7 {
     public static int[] runningSum(int[] nums) {
         int[] ans = nums.clone();
 
