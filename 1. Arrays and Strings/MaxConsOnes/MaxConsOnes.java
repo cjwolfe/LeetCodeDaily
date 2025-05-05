@@ -1,4 +1,4 @@
-class Day6 {
+class MaxConsOnes {
     // Comments are incorrect bits of logic
     public static int longestOnes(int[] nums, int k) {
         int left, ans, 

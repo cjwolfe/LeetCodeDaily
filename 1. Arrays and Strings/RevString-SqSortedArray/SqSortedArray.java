@@ -1,4 +1,4 @@
-class Solution {
+class SqSortedArray {
     public int[] sortedSquares(int[] nums) {
         //square array
         int[] ans = new int[nums.length];

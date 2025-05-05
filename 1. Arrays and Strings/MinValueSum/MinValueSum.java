@@ -1,6 +1,6 @@
 //package Day 8;
 
-class Solution {
+class MinValueSum {
     public static int minStartValue(int[] nums) {
         int sum = 0;
         int minSum = 0;
