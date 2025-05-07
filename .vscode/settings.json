@@ -1,3 +1,7 @@
 {
-    "java.debug.settings.onBuildFailureProceed": true
+    "java.debug.settings.onBuildFailureProceed": true,
+    "java.project.sourcePaths": [
+        "2. Hashing/IsPangram",
+        "2. Hashing/MissingNumber"
+    ]
 }
