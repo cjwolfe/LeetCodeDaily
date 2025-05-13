@@ -1,6 +1,13 @@
 {
     "configurations": [
         {
+            "type": "java",
+            "name": "MaxBalloons",
+            "request": "launch",
+            "mainClass": "MaxBalloons",
+            "projectName": "LeetCodeDaily_4dd3729d"
+        },
+        {
             "name": "(lldb) Launch",
             "type": "cppdbg",
             "request": "launch",
