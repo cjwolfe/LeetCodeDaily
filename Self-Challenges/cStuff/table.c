@@ -25,5 +25,18 @@ int main()
     
     }
 
+    float fahr2, celsius2;
+    fahr2 = lower;
+
+    printf("Farenheit\tCelsius\tFloating\n");
+
+    /* updated for floating point*/
+    while (fahr2 <= upper){
+        celsius2 = 5.0 * (fahr2 - 32.0) / 9.0;
+        printf("%3.0f\t%6.1f\t\n", fahr2, celsius2);    
+        fahr2 = fahr2 + step;
+    
+    }
+
 
 }
