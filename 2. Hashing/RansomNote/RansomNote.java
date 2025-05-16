@@ -1,11 +1,47 @@
+import java.util.*;
 public class RansomNote {
 
 
     public boolean canConstruct(String ransomNote, String magazine) {
-        //if(Math.random() > .5) return true;
-        return ransomNote.equals(magazine);
-    }
+        
+        // Check edge cases
+        if(ransomNote.isEmpty()) return false;
+        if(magazine.isEmpty()) return false;
+   
+        // initialize a frequency map of each letter in magazine
+        HashMap<Character, Integer> mag = new HashMap<>();
+        for(char chars : magazine.toCharArray()){
+            mag.put(chars, mag.getOrDefault(chars, 0) + 1);
+        }
 
+
+        // iterate over ransomNote checking if it exists in the map with a non-zero count
+            // return false quickly
+        // char [] note = ransomNote.toCharArray();
+
+
+        for(char chars : ransomNote.toCharArray()){
+            //if the letter is missing or the count is zero, return false.
+            if(!mag.containsKey(chars) || mag.get(chars) == 0){
+                return false;                
+            }
+            mag.put(chars, mag.get(chars) -1);
+
+            if(mag.get(chars) == 0){
+                mag.remove(chars);
+            }
+
+
+            
+        }
+        return true;
+
+        //if (mag.isEmpty()) return true; else return false;
+
+
+        //if (count == 0) return true; else return false;
+
+    }
 
 
     public static void main(String[] args) {

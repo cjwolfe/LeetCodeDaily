@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Jewels",
+            "request": "launch",
+            "mainClass": "Jewels",
+            "projectName": "LeetCodeDaily_4dd3729d"
+        },
+        {
+            "type": "java",
             "name": "RansomNote",
             "request": "launch",
             "mainClass": "RansomNote",
