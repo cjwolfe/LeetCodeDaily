@@ -5,10 +5,11 @@
         "2. Hashing/MissingNumber",
         "2. Hashing/MatchLosses",
         "2. Hashing/LargestUnique",
+        "2. Hashing/Jewels",
         "2. Hashing/IsPangram",
         "2. Hashing/CountingElements",
         "2. Hashing/ContiguousArray",
         "2. Hashing/Balloons",
-        "2. Hashing/Jewels"
+        "3. Linked Lists/LinkedList"
     ]
 }

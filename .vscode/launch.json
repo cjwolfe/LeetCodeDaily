@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "LeetCodeDaily_4dd3729d"
+        },
+        {
+            "type": "java",
+            "name": "RemoveDuplicates",
+            "request": "launch",
+            "mainClass": "RemoveDuplicates",
+            "projectName": "LeetCodeDaily_4dd3729d"
+        },
+        {
+            "type": "java",
             "name": "Jewels",
             "request": "launch",
             "mainClass": "Jewels",
