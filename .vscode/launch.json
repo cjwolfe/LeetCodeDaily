@@ -4,6 +4,13 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "LinkedList.Main",
+            "projectName": "LeetCodeDaily_4dd3729d"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "Main",
             "projectName": "LeetCodeDaily_4dd3729d"
         },
