@@ -29,7 +29,8 @@ public class MaxBalloons {
         }
 
         //separate map for input
-        HashMap<Character, Integer> map2 = new HashMap();
+
+        HashMap<Character, Integer> map2 = new HashMap<>();
 
         //old
         //int ans = 0;

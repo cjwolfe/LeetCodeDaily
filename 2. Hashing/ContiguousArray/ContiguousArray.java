@@ -1,5 +1,6 @@
 import java.util.*;
 public class ContiguousArray {
+
     public static int findMaxLength(int[] nums){
         // count the number of totalZeroes and totalOnes
 
@@ -11,7 +12,7 @@ public class ContiguousArray {
         
 
         // this is basically all rewritten by GPT. #VibeCoding
-        HashMap<Integer,Integer> map = new HashMap();
+        HashMap<Integer,Integer> map = new HashMap<>();
         map.put(0,-1);
 
         int maxLength = 0;

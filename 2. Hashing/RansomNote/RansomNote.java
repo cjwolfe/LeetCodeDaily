@@ -60,18 +60,21 @@ public class RansomNote {
         StringBuilder sb = new StringBuilder();
 
         sb.append("RansomNote.java\n");
-        for(int i = 0; sb.length() < 47; i++){
+
+        for(@SuppressWarnings("unused")
+        int i = 0; sb.length() < 47; i++){
+
             sb.append("*--*");
         }
-        sb.append("\nInput strings:     " + ransomNote + " + " + magazine);
-        sb.append("\nExpected Ouput:    " + output);
-        sb.append("\nActual output:     " + temp.canConstruct(ransomNote, magazine));
-        sb.append("\nInput strings:     " + ransomNote2 + " + " + magazine2);
-        sb.append("\nExpected Ouput:    " + output2);
-        sb.append("\nActual output:     " + temp.canConstruct(ransomNote2, magazine2));
-        sb.append("\nInput strings:     " + ransomNote3 + " + " + magazine3);
-        sb.append("\nExpected Ouput:    " + output3);
-        sb.append("\nActual output:     " + temp.canConstruct(ransomNote3, magazine3));
+        sb.append("\nInput strings:     ").append(ransomNote).append(" + ").append(magazine);
+        sb.append("\nExpected Ouput:    ").append(output);
+        sb.append("\nActual output:     ").append(temp.canConstruct(ransomNote, magazine));
+        sb.append("\nInput strings:     ").append(ransomNote2).append(" + ").append(magazine2);
+        sb.append("\nExpected Ouput:    ").append(output2);
+        sb.append("\nActual output:     ").append(temp.canConstruct(ransomNote2, magazine2));
+        sb.append("\nInput strings:     ").append(ransomNote3).append(" + ").append(magazine3);
+        sb.append("\nExpected Ouput:    ").append(output3);
+        sb.append("\nActual output:     ").append(temp.canConstruct(ransomNote3, magazine3));
         sb.append("\n");
         System.out.print(sb);
 

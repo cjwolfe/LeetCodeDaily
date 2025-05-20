@@ -1,6 +1,11 @@
+
 import java.util.*;
 
 public class MatchLosses {
+
+    // @SuppressWarnings("unread")
+    @SuppressWarnings("unchecked")
+
     public static List<List<Integer>> findWinners(int[][] matches) {
         
         // matches [i] = [winner_i, loser_i]
@@ -38,6 +43,10 @@ public class MatchLosses {
         for(TreeSet<Integer> set : treeSetArray){
             ans.add(new ArrayList<>(set));
         }
+
+        //added to shut up vscode
+        ans.add(new ArrayList<>(wins));
+
         
         // add inner lists
         // ans.add(new ArrayList<>());

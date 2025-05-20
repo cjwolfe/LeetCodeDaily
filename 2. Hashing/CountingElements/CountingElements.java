@@ -1,6 +1,7 @@
 import java.util.*;
 
 public class CountingElements{
+    @SuppressWarnings("unchecked")
     public static int countElements(int[] arr){
         int n = arr.length + 1;
 
@@ -8,6 +9,7 @@ public class CountingElements{
         //int[] hash = new int[n + 1];
         int sum = 0;
 
+        @SuppressWarnings("rawtypes")
         HashSet set = new HashSet<>();
         //HashSet comparisonSet = new HashSet<>();
 
