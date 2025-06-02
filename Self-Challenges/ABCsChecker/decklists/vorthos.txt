@@ -1,0 +1,128 @@
+1 Academy Ruins
+1 Agent of Treachery
+1 Angel of Despair
+1 Archangel Elspeth
+1 Ashnod's Coupon
+1 Better Than One
+1 Bloodstained Mire
+1 Bolas's Citadel
+1 Booster Tutor
+1 Brain Freeze
+1 Bribery
+1 Bronze Calendar
+1 Captain Sisay
+1 Chatzuk, Mighty Guitarist
+1 Chromatic Lantern
+1 Clone
+1 Colossal Dreadmask
+1 Colossal Dreadmaw
+1 Command Tower
+1 Cruel Ultimatum
+1 Deep Analysis
+1 Despark
+1 Dictate of Kruphix
+1 Divination
+1 Dockside Extortionist
+1 Domesticated Watercourse
+1 Dryad of the Ilysian Grove
+1 Enchanted Prairie
+1 Enter the Dungeon
+1 Everythingamajig
+1 Exchange of Words
+1 Expedition Map
+1 Fellwar Stone
+1 Fetching Garden
+1 Forest
+1 Ghostfire Slice
+1 Glade of the Pump Spells
+1 Gobland
+1 Heartwood Storyteller
+1 Hot Fix
+1 Hurloon Wrangler
+1 Island
+1 Kindslaver
+1 Lazotep Archway
+1 Letter Bomb
+1 Lotus Petal
+1 Maestros' Totally Safe Hideout
+1 Mana Crypt
+1 Meddling Kids
+1 Meltdown
+1 Mind's Dilation
+1 Mindslaver
+1 Mistakes Were Made
+1 Mountain
+1 Mystical Tutor
+1 Nearby Planet
+1 Nethergoyf
+1 Nicol Bolas
+1 Nicol Bolas, Dragon-God
+1 Nicol Bolas, God-Pharaoh
+1 Nicol Bolas, Planeswalker
+1 Nicol Bolas, the Ravager
+1 Noxious Bayou
+1 Omenpath to Naya
+1 Paradise Mantle
+1 Phantasmal Dreadmaw
+1 Phyrexian Arena
+1 Plains
+1 Pointy Finger of Doom
+1 Prismari Campus
+1 Pyroblast
+1 Quag Feast
+1 R&D's Secret Lair
+1 Rejuvenating Springs
+1 Riveteers Charm
+1 Second City
+1 Siphon Insight
+1 Six
+1 Slave of Bolas
+1 Slumbering Waterways
+1 Sol Ring
+1 Solve the Equation
+1 Spectator Seating
+1 Spelunking
+1 Sublime Epiphany
+1 Swamp
+1 Sylvan Library
+1 Taiga Stadium
+1 Temple of Abandon
+1 Temple of Deceit
+1 Temple of Epiphany
+1 Temple of Malice
+1 Temple of Mystery
+1 Temple of Silence
+1 Temple of Triumph
+1 Tempt with Discovery
+1 Tempt with Reflections
+1 Temur Elevator
+1 The Big Top
+1 The One Ring
+1 The World Tree
+1 Tormod's Crypt
+1 Training Center
+1 Ulamog, the Defiler
+1 Under-Construction Skyscraper
+1 Underdome
+1 Underworld Breach
+1 Up the Beanstalk
+1 Urza, Academy Headmaster
+1 Urza's Fun House
+1 Urza's Mine
+1 Urza's Power Plant
+1 Urza's Tower
+1 Valki, God of Lies
+1 Value Town
+1 Very Cryptic Command
+1 Vizier of Many Faces
+1 Waste Land
+1 Wish
+1 Witherbloom Campus
+1 Wrecking Crew
+
+SIDEBOARD:
+1 Lutri, the Spellchaser
+1 Yorion, Sky Nomad
+
+1 Vorthos, Steward of Myth
+

@@ -8,6 +8,7 @@
 At the beginning of your upkeep, if you control permanents with names that include all twenty-six letters of the English alphabet, you win the game.
 
 ## Todo
+[ ] - Create a way to use any file to test ABCs
 
 
 
@@ -19,6 +20,8 @@ At the beginning of your upkeep, if you control permanents with names that inclu
 
 
 2. if match, then decklist can be done
+
+3. May have to process file differently than hashsets
 
 
 If using a string result of process file, it probably won't allow for a clean check of which letters you have

@@ -6,6 +6,7 @@ public class ABCs {
     public HashSet<Character> hashFile = new HashSet<>();
     public String fileOutput;
 
+
     public void setup(){
         // reference string of the alphabet
     String alphabet = "abcdefghijklmnopqrstuvwxyz";
@@ -14,16 +15,27 @@ public class ABCs {
         hashABCs.add(chars);
         }
     // hashABCs is now the alphabet
-    FileProcessor fp = new FileProcessor("./Self-Challenges/ABCsChecker/decklist.txt");
-    FileProcessor fp2 = new FileProcessor("./Self-Challenges/ABCsChecker/decklist2.txt");
-    //System.out.println("This is what the file contains: " + fp.processFile());
-    
-    // public void 
-    fileOutput = fp.processFile().toLowerCase();
+    }
+
+    public String getUserInput(){
+        String userInput = "";
+        try (Scanner input = new Scanner(System.in)) {
+            System.out.println("Please input your decklist name: ");
+            while(input.hasNextLine()){
+                userInput = input.nextLine();
+            }
+        }
+        return userInput;
+    }
+
+    public void getDecklist(String decklist){
+        FileProcessor fp = new FileProcessor("Self-Challenges/ABCsChecker/decklists/" + decklist + ".txt");
+        fileOutput = fp.processFile().toLowerCase();
 
         for (char chars : fileOutput.toCharArray()){
             hashFile.add(chars);
         }
+    
     }
     
 
@@ -35,9 +47,7 @@ public class ABCs {
     }
 
     public boolean containsAllLetters(){
-
         // if hashABCs == hashFile
-
         return hashABCs.equals(hashFile);
     }
     public String getLettersNeeded(){
@@ -47,9 +57,13 @@ public class ABCs {
     }
 
     public static void main(String[] args){
-        // long startTime = System.currentTimeMillis();
         ABCs ex = new ABCs();
         ex.setup();
+        ex.getDecklist(ex.getUserInput());
+
+
+
+
         System.out.println(ex.getAlphabet());
         System.out.println(ex.getFileOutput());
         if(ex.containsAllLetters()){

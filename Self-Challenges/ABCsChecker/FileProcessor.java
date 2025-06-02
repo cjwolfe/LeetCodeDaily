@@ -14,6 +14,9 @@ public class FileProcessor{
         try {
             this.file = new File(filePath);
             System.out.println("Looking for file at " + file.getAbsolutePath());
+            if(!file.exists()){
+            System.out.println("File was not found at " + file.getAbsolutePath());
+            }
             s = new Scanner(this.file);
             while(s.hasNextLine()){
                 tempText += s.nextLine();
@@ -29,6 +32,8 @@ public class FileProcessor{
 
     public String processFile(){
         //handle reading/writing here
+        // consider using string.split() and a regex to process this file, removing numbers and special characters and
+        // keeping letters, using numbers or newlines as divisions.
         while(s.hasNextLine()){
             tempText += s.nextLine();
             System.out.println(tempText);
