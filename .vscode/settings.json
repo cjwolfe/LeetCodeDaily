@@ -1,7 +1,6 @@
 {
     "java.debug.settings.onBuildFailureProceed": true,
     "java.project.sourcePaths": [
-        "LeetCode Challenges/Easy - Words Containing Character",
         "3. Linked Lists/LinkedList",
         "2. Hashing/RansomNote",
         "2. Hashing/MissingNumber",
@@ -15,6 +14,6 @@
         "2. Hashing/Balloons",
         "1. Arrays and Strings/RunningSum",
         "1. Arrays and Strings/MaxAverageSubarray",
-        "LeetCode Challenges/Easy - EvenNumDigits"
+        "Self-Challenges/ABCsChecker"
     ]
 }

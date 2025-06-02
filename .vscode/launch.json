@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ABCs",
+            "request": "launch",
+            "mainClass": "ABCs",
+            "projectName": "LeetCodeDaily_4dd3729d"
+        },
+        {
+            "type": "java",
             "name": "EvenNumDigits",
             "request": "launch",
             "mainClass": "EvenNumDigits",
