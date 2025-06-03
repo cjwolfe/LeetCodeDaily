@@ -35,6 +35,8 @@ public class ABCs {
         for (char chars : fileOutput.toCharArray()){
             hashFile.add(chars);
         }
+
+
     
     }
     

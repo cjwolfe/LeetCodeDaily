@@ -9,6 +9,7 @@ At the beginning of your upkeep, if you control permanents with names that inclu
 
 ## Todo
 [ ] - Create a way to use any file to test ABCs
+[ ] - Process each line individually
 
 
 
@@ -26,3 +27,39 @@ At the beginning of your upkeep, if you control permanents with names that inclu
 
 If using a string result of process file, it probably won't allow for a clean check of which letters you have
 But to check if the thing can be done at all, it's faster to check with hashset before doing anything computationally intensive.
+
+
+
+Capturing text without numbers (will need to handle "Sideboard:", maybe if text = "SIDEBOARD:" then do not include it in array)
+````Java
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class TextCapture {
+    public static void main(String[] args) {
+        try {
+            File file = new File("yourfile.txt");
+            Scanner scanner = new Scanner(file);
+
+            while (scanner.hasNextLine()) {
+                // Read the number first (discard it)
+                if (scanner.hasNextInt()) {
+                    scanner.nextInt(); // skip number
+                }
+
+                // Read the rest of the line
+                if (scanner.hasNextLine()) {
+                    String line = scanner.nextLine().trim(); // trims leading space
+                    System.out.println(line); // Do what you want with this
+                }
+            }
+
+            scanner.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("File not found.");
+            e.printStackTrace();
+        }
+    }
+}
+````
