@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "RemoveDuplicates",
+            "request": "launch",
+            "mainClass": "LinkedList.RemoveDuplicates",
+            "projectName": "LeetCodeDaily_4dd3729d"
+        },
+        {
+            "type": "java",
             "name": "ABCs",
             "request": "launch",
             "mainClass": "ABCs",
