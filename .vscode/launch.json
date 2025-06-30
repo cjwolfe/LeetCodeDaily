@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "LongestCommonPrefix",
+            "request": "launch",
+            "mainClass": "LongestCommonPrefix",
+            "projectName": "LeetCodeDaily_92bcfddf"
+        },
+        {
+            "type": "java",
             "name": "RemoveDuplicates",
             "request": "launch",
             "mainClass": "LinkedList.RemoveDuplicates",
