@@ -18,5 +18,5 @@ Objects!
 ## Total Assets
 - Month,Year is one object
 - button for Form to input data
-- button for form to mass input data, input 
+- button for form to mass input data, input csv file
 - 
