@@ -14,27 +14,27 @@ class ListNode {
 
 public class LinkedListCycle{
 
-    HashSet<Integer> set = new HashSet<>();
+    //HashSet<Integer> set = new HashSet<>();
 
+    HashSet<ListNode> seen = new HashSet<>();
 
     public boolean hasCycle(ListNode head){
         int pos = 0;
         int tally = 0;
-        int inc = 0;
         while (head != null){
-            pos = head.val;
-            System.out.println("pos " + pos);
-            if(set.contains(pos)){tally++;}
-            set.add(pos);
-            inc ++;
-
-                // Math.max(0,set.get(pos)+1)
-            System.out.println("Pos's count" + set.contains(pos)+1);
-            System.out.println("tally " + tally);
-            System.out.println("Increment: " + inc);
+            if(!seen.add(head)) return true;
             head = head.next;
-            //if(set.contains(pos)){return true;} 
-            if (tally>50){ return true;}
+
+
+
+
+           /*  pos = head.val;
+            // Increment tally when matching nodes are found
+            if(set.contains(pos)){tally++;}
+            set.add(pos); // add node to set, so it can be tracked
+
+            head = head.next;
+            if (tally>105){ return true;} // if tally is greater than the number of potential nodes in the list, return true (it cycles) */
         } 
 
 
@@ -56,9 +56,15 @@ public class LinkedListCycle{
         l3.next = l4;
         l4.next = l2;
 
+        ListNode m1 = new ListNode(1);
+        m1.next = null;
+
         LinkedListCycle ex = new LinkedListCycle();
 
+
         System.out.println(ex.hasCycle(l1));
+
+        System.out.println(ex.hasCycle(m1));
 
 
 
