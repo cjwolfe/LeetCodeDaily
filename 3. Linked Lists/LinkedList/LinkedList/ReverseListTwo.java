@@ -1,7 +1,35 @@
 package LinkedList;
 
 public class ReverseListTwo {
-    
+    public ListNode reverseBetween(ListNode head, int left, int right) {
+        ListNode prev = null;
+        ListNode curr= head;
+        int count = 1;
+        while(count <= left){
+
+
+            curr = head.next;
+            count++;
+        }
+        // while count < left, increment head
+        // increment count
+
+        // while head!= null
+        while (count<right){
+        
+        while (curr != null){
+
+
+        ListNode nextNode = curr.next;
+        curr.next = prev;
+        prev = curr;
+        curr = nextNode;
+        }
+        count++;
+        }
+        //System.out.println(prev.val);
+        return prev;
+    }
 
     public static void main(String[] args) {
         
@@ -17,7 +45,9 @@ public class ReverseListTwo {
         l4.next = l5;
         l5.next = null;
 
-        
+        ReverseListTwo ex = new ReverseListTwo();
+
+        ex.reverseBetween(l1, 2, 4);
 
 
     }
