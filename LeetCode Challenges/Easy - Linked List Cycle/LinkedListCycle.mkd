@@ -39,3 +39,29 @@ pos is -1 or a valid index in the linked-list.
  
 
 Follow up: Can you solve it using O(1) (i.e. constant) memory?
+
+
+
+1. Error with big lists with multiple repeats (hard to test for)
+
+One fix: , O(1)
+public boolean hasCycle(ListNode head) {
+    if (head == null || head.next == null) return false;
+    ListNode slow = head, fast = head.next;
+    while (fast != null && fast.next != null) {
+        if (slow == fast) return true;
+        slow = slow.next;
+        fast = fast.next.next;
+    }
+    return false;
+}
+
+Another fix: , O(n)
+public boolean hasCycle(ListNode head) {
+    Set<ListNode> seen = new HashSet<>();
+    while (head != null) {
+        if (!seen.add(head)) return true; // we've seen this exact node before
+        head = head.next;
+    }
+    return false;
+}

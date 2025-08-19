@@ -1,0 +1,22 @@
+# Finances 3.0
+
+
+## Goals
+- Create a replacement for my finances spreadsheet
+- Reliable, not overwriting data
+- Import CSV file of data
+- Multiple Pages/Views
+
+
+Objects!
+
+## Main View
+- Editable Text field for theme
+- Ratio of each account graph
+- Total Assets
+
+## Total Assets
+- Month,Year is one object
+- button for Form to input data
+- button for form to mass input data, input csv file
+- 
