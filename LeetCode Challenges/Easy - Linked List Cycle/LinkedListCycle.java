@@ -14,6 +14,9 @@ class ListNode {
 
 public class LinkedListCycle{
     public boolean hasCycle(ListNode head){
+        //cycle through list
+        //see if combination of two numbers has been seen before?
+        
         return false;
     }
 
