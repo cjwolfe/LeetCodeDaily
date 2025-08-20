@@ -19,6 +19,9 @@ public class LinkedListCycle{
     HashSet<ListNode> seen = new HashSet<>();
 
     public boolean hasCycle(ListNode head){
+        //cycle through list
+        //see if combination of two numbers has been seen before?
+        
         int pos = 0;
         int tally = 0;
         while (head != null){
