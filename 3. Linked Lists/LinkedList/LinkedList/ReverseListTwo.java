@@ -5,10 +5,12 @@ public class ReverseListTwo {
         ListNode prev = null;
         ListNode curr= head;
         int count = 1;
+        ListNode start = head;
         while(count <= left){
 
 
             curr = head.next;
+            start.next = curr;
             count++;
         }
         // while count < left, increment head
@@ -19,16 +21,34 @@ public class ReverseListTwo {
         
         while (curr != null){
 
-
         ListNode nextNode = curr.next;
         curr.next = prev;
         prev = curr;
         curr = nextNode;
+        start.next = curr;
         }
         count++;
         }
         //System.out.println(prev.val);
-        return prev;
+        return start;
+    }
+
+
+    public String toString(ListNode head){
+        StringBuilder sb = new StringBuilder();
+        if (head == null){
+            return "No Linked List";
+        }
+        sb.append("[");
+        //String ans = "";
+        while(head != null){
+        sb.append(head.val);
+        head = head.next;
+        if (head != null){sb.append(", ");}
+
+        }
+        sb.append("]");
+        return sb.toString();
     }
 
     public static void main(String[] args) {
@@ -47,7 +67,9 @@ public class ReverseListTwo {
 
         ReverseListTwo ex = new ReverseListTwo();
 
-        ex.reverseBetween(l1, 2, 4);
+        System.out.println("Expected: " + ex.toString(l1));
+        System.out.print("Actual: ");
+        System.out.println(ex.toString(ex.reverseBetween(l1, 2, 4)));
 
 
     }
