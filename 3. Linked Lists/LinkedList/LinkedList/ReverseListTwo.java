@@ -2,13 +2,13 @@ package LinkedList;
 
 public class ReverseListTwo {
     public ListNode reverseBetween(ListNode head, int left, int right) {
-        ListNode prev = null;
         ListNode curr= head;
+
+        ListNode temp = curr.next;
+        ListNode prev = null;
         int count = 1;
         ListNode start = head;
         while(count <= left){
-
-
             curr = head.next;
             start.next = curr;
             count++;
