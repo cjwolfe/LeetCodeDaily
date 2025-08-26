@@ -2,6 +2,7 @@
     "java.debug.settings.onBuildFailureProceed": true,
     "java.project.sourcePaths": [
         "LeetCode Challenges/Easy - Linked List Cycle",
+        "Finances 3.0",
         "3. Linked Lists/LinkedList",
         "2. Hashing/RansomNote",
         "2. Hashing/MissingNumber",
@@ -15,6 +16,6 @@
         "2. Hashing/Balloons",
         "1. Arrays and Strings/RunningSum",
         "1. Arrays and Strings/MaxAverageSubarray",
-        "Finances 3.0"
+        "4. Stacks and Queues"
     ]
 }
