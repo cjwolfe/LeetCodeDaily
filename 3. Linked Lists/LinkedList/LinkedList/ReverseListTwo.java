@@ -2,35 +2,45 @@ package LinkedList;
 
 public class ReverseListTwo {
     public ListNode reverseBetween(ListNode head, int left, int right) {
-        ListNode curr= head;
+        if (head == null){return null;}
+        ListNode curr = head, prev = null;
 
-        ListNode temp = curr.next;
-        ListNode prev = null;
-        int count = 1;
-        ListNode start = head;
-        while(count <= left){
-            curr = head.next;
-            start.next = curr;
-            count++;
+        // pretty much all of this is just reinterpreted from the answer.
+        // move two pointers until they reach the proper starting point in the list
+        while(left > 1){
+            prev = curr;
+            curr = curr.next;
+            left--;
+            right--;
         }
-        // while count < left, increment head
-        // increment count
+        // the two pointers that will fix the final connections
+        ListNode con = prev, tail = curr;
 
-        // while head!= null
-        while (count<right){
+        // Iteratively reverse the nodes until right becomes 0
+        ListNode third = null;
+        while(right>0){
+            // save current
+            third = curr.next;
+            // reverse nodes
+            curr.next = prev;
+            prev = curr;
+            curr = third;
+            right--;
+        }
+
+        // adjust the final connections as explained in the algorithm
+        if(con != null){
+            con.next = prev;
+        } else {
+            head = prev;
+        }
+
+        tail.next = curr;
+
+
+
         
-        while (curr != null){
-
-        ListNode nextNode = curr.next;
-        curr.next = prev;
-        prev = curr;
-        curr = nextNode;
-        start.next = curr;
-        }
-        count++;
-        }
-        //System.out.println(prev.val);
-        return start;
+        return head;
     }
 
 
@@ -67,7 +77,8 @@ public class ReverseListTwo {
 
         ReverseListTwo ex = new ReverseListTwo();
 
-        System.out.println("Expected: " + ex.toString(l1));
+        System.out.println("Input: " + ex.toString(l1));
+        System.out.println("Expected: [1, 4, 3, 2, 5]");
         System.out.print("Actual: ");
         System.out.println(ex.toString(ex.reverseBetween(l1, 2, 4)));
 

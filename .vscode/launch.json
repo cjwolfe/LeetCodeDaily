@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "LinkedList.Main",
+            "projectName": "LeetCodeDaily_92bcfddf"
+        },
+        {
+            "type": "java",
             "name": "ReverseListTwo",
             "request": "launch",
             "mainClass": "LinkedList.ReverseListTwo",
