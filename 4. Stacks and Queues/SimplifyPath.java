@@ -3,9 +3,23 @@ public class SimplifyPath {
 
     public String simplifyPath(String path){
         Stack<Character> stack = new Stack();
-        String ans = path;
+        for(char c : path.toCharArray()){
+            stack.push(c);
+        }
+        StringBuilder ans = new StringBuilder();
+        
+        while(!stack.isEmpty()){
+            System.out.println("ans is " + ans.length() + " " + ans.toString());
+            // push the next character
+            ans.append(stack.pop());
 
-        return ans;
+            if(stack.peek() == '/' && ans.charAt(ans.length()) == '/'){
+                stack.pop();
+            }
+            
+        
+        }
+        return ans.toString();
     }
 
     public static void main(String[] args){
@@ -21,14 +35,17 @@ public class SimplifyPath {
         String path2Ans = "/home/foo";
         String path3Ans = "/home/user/Pictures";
 
-        System.out.println("Path 1: " + path1);
+        System.out.println("Path 1 Input: " + path1);
         System.out.println("Path 1 Ans: " + path1Ans);
+        System.out.println("Act Output: " + sp.simplifyPath(path1));
         System.out.println("Output: " + path1Ans.equals(sp.simplifyPath(path1)));
-        System.out.println("Path 1: " + path2);
-        System.out.println("Path 1 Ans: " + path2Ans);
+        System.out.println("Path 2 Input: " + path2);
+        System.out.println("Path 2 Ans: " + path2Ans);
+        System.out.println("Act Output: " + sp.simplifyPath(path2));
         System.out.println("Output: " + path2Ans.compareTo(sp.simplifyPath(path2)));
-        System.out.println("Path 1: " + path3);
-        System.out.println("Path 1 Ans: " + path3Ans);
+        System.out.println("Path 3 Input: " + path3);
+        System.out.println("Path 3 Ans: " + path3Ans);
+        System.out.println("Act Output: " + sp.simplifyPath(path3));
         System.out.println("Output: " + path3Ans.compareTo(sp.simplifyPath(path3)));
         
         
